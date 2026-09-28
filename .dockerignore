@@ -1,0 +1,49 @@
+# Version Control & Git
+.git
+.gitignore
+
+# Dependencies (Installed inside Dockerfile.base)
+node_modules
+.pnp
+.pnp.*
+.yarn
+
+# Next.js Build Outputs & Local Caches
+.next
+out
+build
+dist
+
+# Environment Files (Security: Prevent leaking secrets into Docker image)
+.env
+.env.*
+.env*.local
+!.env.example
+
+# Test & Coverage Artifacts
+coverage
+coverage.html
+coverage.json
+*.lcov
+
+# IDE & Editor Metadata
+.idea
+.vscode
+*.swp
+*.swo
+*~
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# Debug & Execution Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+*.log
+
+# Documentation & Deployment Guides (not needed in container runtime)
+README.md
+deployment/README.md
